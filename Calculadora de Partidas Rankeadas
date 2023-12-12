@@ -1,0 +1,38 @@
+let nomeNoCadastro = "Danilo Insfran" 
+let nickname = "Peh-De-Pano" 
+let sexo =("H") 
+let idade =("33") 
+let vitorias = "30"
+let derrotas = "4"
+
+
+function rankeadas(vitorias, derrotas) {
+    
+    if (vitorias < 10) {
+        return "Ferro";
+    } else if (vitorias <= 20) {
+        return "Bronze";
+    } else if (vitorias <= 50) {
+        return "Prata";
+    } else if (vitorias <= 80) {
+        return "Ouro";
+    } else if (vitorias <= 90) {
+        return "Diamante";
+    } else if (vitorias <= 100) {
+        return "Lendário";
+    } else {
+        return "Imortal";
+    }
+   }
+   
+console.log("Bem vindo ") 
+console.log(nomeNoCadastro)
+console.log( )
+console.log("Você Entrou no servidor com o Herói:")
+console.log( )
+console.log("Personagem = " + nickname)
+console.log("Sexo = " + sexo)
+console.log("Idade = " + idade)
+console.log("Vitorias = " + vitorias)
+console.log("Derrotas = " + derrotas)
+console.log("Possição no Ranke = " + rankeadas(vitorias, derrotas));
